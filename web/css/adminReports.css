@@ -1,0 +1,144 @@
+ body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Light grey background */
+            color: #333;
+        }
+
+        header {
+            background-color: #333333; /* Dark grey header color */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #4CAF50; /* Green border for a modern touch */
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1000px;
+            margin: 40px auto;
+            background-color: white;
+            border-radius: 12px; /* Slightly rounded corners */
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Stronger shadow for depth */
+        }
+
+        .reports {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .report-section {
+            background-color: #fafafa; /* Light background for sections */
+            border-radius: 12px; /* Matching border radius with container */
+            padding: 20px;
+            border-left: 5px solid #4CAF50; /* Green border on the left for emphasis */
+            transition: background-color 0.3s ease;
+        }
+
+        .report-section:hover {
+            background-color: #f1f1f1; /* Slight color change on hover */
+        }
+
+        .report-section h3 {
+            color: #4CAF50; /* Green color for section headings */
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .report-section p {
+            color: #555;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        .report-section form {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap; /* Allows form elements to wrap on smaller screens */
+        }
+
+        .report-section input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+            width: 100%; /* Ensure inputs fill their container */
+        }
+
+        .report-section button {
+            padding: 12px 20px;
+            background-color: #4CAF50; /* Green button */
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            align-self: flex-start; /* Aligns button to the start of the form */
+        }
+
+        .report-section button:hover {
+            background-color: #45a049;
+        }
+
+        .report-output {
+            margin-top: 20px;
+            background-color: white;
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+        }
+
+        .report-output table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .report-output th, .report-output td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+            font-size: 1em;
+        }
+
+        .report-output th {
+            background-color: #4CAF50; /* Green background for table headers */
+            color: white;
+        }
+
+        .report-output td {
+            background-color: #fafafa;
+        }
+
+        .report-output tr:nth-child(even) td {
+            background-color: #f5f5f5; /* Slightly darker grey for even rows */
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+                margin: 20px auto;
+            }
+
+            header {
+                padding: 15px;
+            }
+
+            .report-section {
+                padding: 15px;
+            }
+
+            .report-section button {
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            .report-output th, .report-output td {
+                padding: 8px;
+            }
+        }

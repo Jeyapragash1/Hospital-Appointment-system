@@ -1,0 +1,101 @@
+       body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e0f7fa; /* Light blue background color */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .stats-overview {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .stat-card {
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            flex: 1;
+            margin: 0 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .stat-card h3 {
+            margin: 0;
+            font-size: 20px;
+        }
+        .stat-card p {
+            margin: 5px 0 0 0;
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .appointments {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .appointment-card {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            min-width: 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .appointment-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .appointment-card h4 {
+            margin-top: 0;
+            color: #4CAF50;
+        }
+        .appointment-card p {
+            margin: 5px 0;
+            color: #555;
+        }
+        .appointment-card .actions {
+            margin-top: 10px;
+        }
+        .appointment-card .actions button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .appointment-card .actions button:hover {
+            background-color: #45a049;
+        }
+        .appointment-card .actions a {
+            margin-left: 10px;
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .appointment-card .actions a:hover {
+            color: #4CAF50;
+        }

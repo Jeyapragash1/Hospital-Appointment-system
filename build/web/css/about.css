@@ -1,0 +1,119 @@
+   body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #e0f7fa; /* Light blue background color */
+                color: #333;
+            }
+
+            header {
+                background-color: #333333; /* Dark grey header color */
+                color: white;
+                padding: 20px 0;
+                text-align: center;
+            }
+
+            nav {
+                text-align: center;
+                background-color: #333333; /* Dark grey background color for nav */
+                overflow: hidden;
+                padding: 10px 0;
+                position: fixed;
+                width: 100%;
+                top: 0;
+                z-index: 1000;
+            }
+
+            nav a {
+                display: inline-block;
+                color: white;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+                transition: background-color 0.3s ease;
+            }
+
+            nav a:hover {
+                background-color: #4CAF50; /* Green hover effect for nav links */
+                color: white;
+            }
+
+            .container {
+                padding: 80px 20px 20px 20px; /* Added padding-top to account for fixed nav */
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            .content {
+                position: relative;
+                background-color: white;
+                margin: 20px 0;
+                border-radius: 8px;
+                overflow: hidden;
+                transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adding transition for hover effect */
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+
+            .content img {
+                width: 100%;
+                height: 400px; /* Fixed height for all images */
+                object-fit: cover; /* Ensures the image covers the entire area */
+                border-radius: 8px; /* Rounded corners */
+            }
+
+            .content .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.7); /* Darker overlay */
+                display: flex;
+                flex-direction: column;
+                justify-content: center; /* Vertical centering */
+                align-items: center; /* Horizontal centering */
+                padding: 20px;
+                text-align: center; /* Centering text */
+            }
+
+            .content h2 {
+                color: #FFD700; /* Gold color for section headings */
+                margin-bottom: 15px;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow effect for headings */
+            }
+
+            .content p {
+                color: #fff;
+                line-height: 1.6;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow effect for text */
+                margin-bottom: 0;
+                max-width: 80%; /* Limits the width of paragraphs for better readability */
+            }
+
+            .content:hover {
+                transform: translateY(-5px); /* Slightly lifts the content section */
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increases shadow on hover */
+            }
+
+            footer {
+                background-color: #333333; /* Dark grey footer background */
+                color: white;
+                text-align: center;
+                padding: 10px 0;
+                margin-top: 20px;
+                border-radius: 8px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+
+            footer p {
+                margin: 5px 0;
+            }
+
+            footer a {
+                color: #4CAF50; /* Green color for footer links */
+                text-decoration: none;
+            }
+
+            footer a:hover {
+                text-decoration: underline;
+            }

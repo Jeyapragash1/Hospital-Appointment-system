@@ -33,7 +33,7 @@ The Hospital Appointment Booking System is a web-based application designed to s
   
 
 ## Explain
-- there is don't have classes and not properly use oop conecepts
+- there is don't have classes and not properly use oop concepts
 
 Feel free to explore the code, contribute, and enhance this project!
 
